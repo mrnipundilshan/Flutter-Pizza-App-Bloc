@@ -11,5 +11,12 @@ class MyUser {
     required this.email,
     required this.name,
     required this.hasActiveCart,
-  })
+  });
+
+  static final empty = MyUser(
+    userId: '',
+    email: '',
+    name: '',
+    hasActiveCart: false,
+  );
 }
