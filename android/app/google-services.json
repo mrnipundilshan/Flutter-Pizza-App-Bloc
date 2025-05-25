@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "122524901854",
-    "project_id": "pizza-app-27ee7",
-    "storage_bucket": "pizza-app-27ee7.firebasestorage.app"
+    "project_number": "820191358204",
+    "project_id": "projectapp-2ce98",
+    "storage_bucket": "projectapp-2ce98.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:122524901854:android:c7217740bcbfc07c733d4f",
+        "mobilesdk_app_id": "1:820191358204:android:a5b04f7bbfc1b34d96bb79",
         "android_client_info": {
           "package_name": "com.example.pizza_app_bloc"
         }
@@ -15,7 +15,26 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDxQnN6BUBMrZaZHztlAb0RR3EXngb3QT4"
+          "current_key": "AIzaSyAmwXm9WRmTYEED2ILO1rAV8XJtx1t5zAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820191358204:android:c85f066a64f3eb8396bb79",
+        "android_client_info": {
+          "package_name": "com.example.pro2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmwXm9WRmTYEED2ILO1rAV8XJtx1t5zAI"
         }
       ],
       "services": {

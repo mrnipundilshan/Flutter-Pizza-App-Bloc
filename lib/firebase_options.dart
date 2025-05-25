@@ -26,10 +26,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -53,10 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDxQnN6BUBMrZaZHztlAb0RR3EXngb3QT4',
-    appId: '1:122524901854:android:c7217740bcbfc07c733d4f',
-    messagingSenderId: '122524901854',
-    projectId: 'pizza-app-27ee7',
-    storageBucket: 'pizza-app-27ee7.firebasestorage.app',
+    apiKey: 'AIzaSyAmwXm9WRmTYEED2ILO1rAV8XJtx1t5zAI',
+    appId: '1:820191358204:android:a5b04f7bbfc1b34d96bb79',
+    messagingSenderId: '820191358204',
+    projectId: 'projectapp-2ce98',
+    storageBucket: 'projectapp-2ce98.appspot.com',
   );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyAd9QD8QbC81c5Y-A-LPlXk-C6n_oPvdao',
+    appId: '1:820191358204:ios:96c0ff23b56b9e8396bb79',
+    messagingSenderId: '820191358204',
+    projectId: 'projectapp-2ce98',
+    storageBucket: 'projectapp-2ce98.appspot.com',
+    iosBundleId: 'com.example.pizzaAppBloc',
+  );
+
 }
