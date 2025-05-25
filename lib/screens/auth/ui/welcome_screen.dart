@@ -1,6 +1,10 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pizza_app_bloc/screens/auth/blocs/sign_in_bloc/sign_in_bloc.dart';
+import 'package:pizza_app_bloc/screens/auth/blocs/sign_up_bloc/sign_up_bloc.dart';
+import 'package:pizza_app_bloc/screens/auth/ui/sign_in_screen.dart';
+import 'package:pizza_app_bloc/screens/auth/ui/sign_up_screen.dart';
 import '../../../blocs/authentication_bloc/authentication_bloc.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -23,7 +27,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: SingleChildScrollView(
         child: SizedBox(
           height: MediaQuery.of(context).size.height,
@@ -67,9 +71,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                           controller: tabController,
                           unselectedLabelColor: Theme.of(
                             context,
-                          ).colorScheme.onBackground.withOpacity(0.5),
-                          labelColor:
-                              Theme.of(context).colorScheme.onBackground,
+                          ).colorScheme.onSurface.withOpacity(0.5),
+                          labelColor: Theme.of(context).colorScheme.onSurface,
                           tabs: const [
                             Padding(
                               padding: EdgeInsets.all(12.0),

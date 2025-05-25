@@ -167,7 +167,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           color:
                               containsUpperCase
                                   ? Colors.green
-                                  : Theme.of(context).colorScheme.onBackground,
+                                  : Theme.of(context).colorScheme.onSurface,
                         ),
                       ),
                       Text(
@@ -176,7 +176,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           color:
                               containsLowerCase
                                   ? Colors.green
-                                  : Theme.of(context).colorScheme.onBackground,
+                                  : Theme.of(context).colorScheme.onSurface,
                         ),
                       ),
                       Text(
@@ -185,7 +185,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           color:
                               containsNumber
                                   ? Colors.green
-                                  : Theme.of(context).colorScheme.onBackground,
+                                  : Theme.of(context).colorScheme.onSurface,
                         ),
                       ),
                     ],
@@ -199,7 +199,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           color:
                               containsSpecialChar
                                   ? Colors.green
-                                  : Theme.of(context).colorScheme.onBackground,
+                                  : Theme.of(context).colorScheme.onSurface,
                         ),
                       ),
                       Text(
@@ -208,7 +208,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           color:
                               contains8Length
                                   ? Colors.green
-                                  : Theme.of(context).colorScheme.onBackground,
+                                  : Theme.of(context).colorScheme.onSurface,
                         ),
                       ),
                     ],
