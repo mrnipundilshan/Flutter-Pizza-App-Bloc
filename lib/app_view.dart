@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pizza_app_bloc/blocs/authentication_bloc/authentication_bloc.dart';
 
 class MyAppView extends StatelessWidget {
   const MyAppView({super.key});
@@ -15,6 +17,15 @@ class MyAppView extends StatelessWidget {
           primary: Colors.blue,
           onPrimary: Colors.white,
         ),
+      ),
+      home: BlocBuilder<AuthenticationBloc, AuthenticationState>(
+        builder: ((context, state) {
+          if (state.status == AuthenticationStatus.authenticated) {
+            return HomeScreen();
+          } else {
+            return WelcomeScreen();
+          }
+        }),
       ),
     );
   }
