@@ -1,3 +1,6 @@
+import '../entities/pizza_entity.dart';
+import 'models.dart';
+
 class Pizza {
   String pizzaId;
   String picture;
@@ -9,17 +12,17 @@ class Pizza {
   double discount;
   List<Macros> macros;
 
-  Pizza(
-    this.pizzaId,
-    this.picture,
-    this.isVeg,
-    this.spicy,
-    this.name,
-    this.description,
-    this.price,
-    this.discount,
-    this.macros,
-  );
+  Pizza({
+    required this.pizzaId,
+    required this.picture,
+    required this.isVeg,
+    required this.spicy,
+    required this.name,
+    required this.description,
+    required this.price,
+    required this.discount,
+    required this.macros,
+  });
 
   PizzaEntity toEntity() {
     return PizzaEntity(
@@ -43,6 +46,7 @@ class Pizza {
       spicy: entity.spicy,
       name: entity.name,
       description: entity.description,
+      price: entity.price,
       discount: entity.discount,
       macros: entity.macros,
     );

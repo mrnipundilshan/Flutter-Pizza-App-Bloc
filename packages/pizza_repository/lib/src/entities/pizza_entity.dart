@@ -1,3 +1,5 @@
+import '../models/macros.dart';
+
 class PizzaEntity {
   String pizzaId;
   String picture;
