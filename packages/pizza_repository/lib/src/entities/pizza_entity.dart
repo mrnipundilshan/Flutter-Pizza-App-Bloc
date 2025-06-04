@@ -1,4 +1,5 @@
 import '../models/macros.dart';
+import '../entities/macros_entity.dart';
 
 class PizzaEntity {
   String pizzaId;
@@ -33,7 +34,7 @@ class PizzaEntity {
       'description': description,
       'price': price,
       'discount': discount,
-      'macros': macros.map((e) => null),
+      'macros': macros.map((macros) => macros.toEntity().toDocument()),
     };
   }
 
@@ -47,7 +48,9 @@ class PizzaEntity {
       description: doc['description'],
       price: doc['price'],
       discount: doc['discount'],
-      macros: doc['macros'],
+      macros: doc['macros'].map(
+        (e) => Macros.frontEntity(MacrosEntity.fromDocument(e)),
+      ),
     );
   }
 }
