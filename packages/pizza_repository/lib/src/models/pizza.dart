@@ -38,7 +38,7 @@ class Pizza {
     );
   }
 
-  static Pizza frontEntity(PizzaEntity entity) {
+  static Pizza fromEntity(PizzaEntity entity) {
     return Pizza(
       pizzaId: entity.pizzaId,
       picture: entity.picture,

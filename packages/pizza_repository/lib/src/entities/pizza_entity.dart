@@ -49,7 +49,7 @@ class PizzaEntity {
       price: doc['price'],
       discount: doc['discount'],
       macros: doc['macros'].map(
-        (e) => Macros.frontEntity(MacrosEntity.fromDocument(doc['macros'])),
+        (e) => Macros.fromEntity(MacrosEntity.fromDocument(doc['macros'])),
       ),
     );
   }
