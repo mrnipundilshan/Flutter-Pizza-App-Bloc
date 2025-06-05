@@ -6,8 +6,6 @@ part 'get_pizza_state.dart';
 
 class GetPizzaBloc extends Bloc<GetPizzaEvent, GetPizzaState> {
   GetPizzaBloc() : super(GetPizzaInitial()) {
-    on<GetPizzaEvent>((event, emit) {
-      // TODO: implement event handler
-    });
+    on<GetPizzaEvent>((event, emit) {});
   }
 }
